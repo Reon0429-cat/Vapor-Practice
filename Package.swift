@@ -1,6 +1,8 @@
 // swift-tools-version:5.5
 import PackageDescription
 
+// ライブラリの追加などを行う際に使う
+// vapor update コマンド
 let package = Package(
     name: "Vapor-Practice",
     platforms: [

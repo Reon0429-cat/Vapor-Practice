@@ -1,0 +1,12 @@
+
+#extend("index"):
+
+#export("title"):
+<p>ABCD, #(title)!</p>
+#endexport
+
+#export("body"):
+<h1>KAIFKD, #(title)!</h1>
+#endexport
+
+#endextend
