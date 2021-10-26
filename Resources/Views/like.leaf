@@ -2,11 +2,13 @@
 #extend("index"):
 
 #export("title"):
-<p>ABCD, #(title)!</p>
+ABCD, #(title)!
 #endexport
 
 #export("body"):
-<h1>KAIFKD, #(title)!</h1>
+<h1>REON, #(title)!</h1>
+<h1>REON, #(title)!</h1>
+<h1>REON, #(title)!</h1>
 #endexport
 
 #endextend
