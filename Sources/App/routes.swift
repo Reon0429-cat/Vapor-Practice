@@ -1,6 +1,7 @@
 import Vapor
 import Leaf
 import LeafKit
+import Fluent
 
 // アクセスするURLを設定することができる
 func routes(_ app: Application) throws {
