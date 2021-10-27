@@ -13,12 +13,7 @@ public func configure(_ app: Application) throws {
     // app.middleware.use(FileMiddleware(publicDirectory: app.directory.publicDirectory))
     
     app.views.use(.leaf)
-    app.databases.use(.postgres(hostname: "localhost",
-                                username: "oonishireon",
-                                password: "0429Reon",
-                                database: "address"),
-                      as: .psql)
-    app.migrations.add(Book(), to: .psql)
+
     // register routes
     try routes(app)
 }
