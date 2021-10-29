@@ -32,4 +32,17 @@ func routes(_ app: Application) throws {
         return "Hello, world!" + id! + name!
     }
     
+    app.get("a", "*", ":name") { request -> String in
+        let name = request.parameters.get("name")
+        return name! + "bbbb"
+    }
+    
+    // http://127.0.0.1:8080/search?keyword=reon&page=100
+    // -> keyword = reon, page = 100
+    app.get("search") { request -> String in
+        guard let keyword = request.query["keyword"] as String?,
+              let page = request.query["page"] as Int? else { return "" }
+        return "keyword = \(keyword), page = \(page)"
+    }
+    
 }
